@@ -3,30 +3,42 @@ using System.Collections.Generic;
 namespace Game
 {
     class Play {
-        static int Count = 0;
-        string Name;
-        int ID;
+        public static int Count = 0;
+        public string Name;
+        public int Index;
         public Play(string Name)
         {
-            this.ID = Count;
+            this.Index = Count;
             Count++;
             this.Name = Name;
         }
     }
+    class Player 
+    {
+        int health;
+        int energy;
+        int strength;
+        int intelligence;
+        int armor;
+        int resistance;
+        int discipline;
+        int courage;
+    }
     class Client
     {
-        List<Play> plays;
+        Player player;
+        List<Play> Plays;
         public static void WriteLine(string line)
         {
-            Console.WriteLine("<line>"+line+"</line>");
+            Console.WriteLine("<Line>"+line+"</Line>");
         }
         public Client() 
         {
-            plays = new List<Play>();
+            Plays = new List<Play>();
             CreatePlays();
         }
         public void AddPlay(string play) {
-            plays.Add(new Play(play));
+            Plays.Add(new Play(play));
         }
         public void CreatePlays(){
             AddPlay("attack");
@@ -38,13 +50,47 @@ namespace Game
             AddPlay("pray");
             AddPlay("eat");
         }
+        public Play ChoosePlay() {
+            WriteLine("Choose a play...");
+            foreach (Play play in Plays)
+            {
+                WriteLine("Index: " + play.Index + " ,Play: " + play.Name);
+            }
+            string input = Console.ReadLine();
+            int choosenIndex = 0;
+            bool isNumeric = int.TryParse(input, out choosenIndex);
+            if (isNumeric)
+            {
+                if (choosenIndex >= 0 && choosenIndex < Plays.Count)
+                {
+                    return Plays[choosenIndex];
+                }
+                else
+                {
+                    WriteLine("Not a valid play index, try again...");
+                    return ChoosePlay();
+                }
+            }
+            else
+            {
+                choosenIndex = 0;
+                foreach (Play play in Plays)
+                {
+                    if (string.Equals(input, play.Name, StringComparison.OrdinalIgnoreCase))
+                    {
+                        return Plays[choosenIndex];
+                    }
+                    choosenIndex++;
+                }
+                WriteLine("Not a valid play name, try again...");
+                return ChoosePlay();
+            }
+        }
         public void Run()
         {
             WriteLine("Press any key to start playing...");
             Console.ReadKey(true);
-            
-            WriteLine("Choose a play...");
-            WriteLine("Choose a play...");
+            Play play = ChoosePlay();
         }
     }
     class Program
