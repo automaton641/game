@@ -1,0 +1,13 @@
+/home/automaton641/game/dotnet_client/bin/Debug/netcoreapp3.1/game
+/home/automaton641/game/dotnet_client/bin/Debug/netcoreapp3.1/game.deps.json
+/home/automaton641/game/dotnet_client/bin/Debug/netcoreapp3.1/game.runtimeconfig.json
+/home/automaton641/game/dotnet_client/bin/Debug/netcoreapp3.1/game.runtimeconfig.dev.json
+/home/automaton641/game/dotnet_client/bin/Debug/netcoreapp3.1/game.dll
+/home/automaton641/game/dotnet_client/bin/Debug/netcoreapp3.1/game.pdb
+/home/automaton641/game/dotnet_client/obj/Debug/netcoreapp3.1/game.csprojAssemblyReference.cache
+/home/automaton641/game/dotnet_client/obj/Debug/netcoreapp3.1/game.csproj.CoreCompileInputs.cache
+/home/automaton641/game/dotnet_client/obj/Debug/netcoreapp3.1/game.AssemblyInfoInputs.cache
+/home/automaton641/game/dotnet_client/obj/Debug/netcoreapp3.1/game.AssemblyInfo.cs
+/home/automaton641/game/dotnet_client/obj/Debug/netcoreapp3.1/game.dll
+/home/automaton641/game/dotnet_client/obj/Debug/netcoreapp3.1/game.pdb
+/home/automaton641/game/dotnet_client/obj/Debug/netcoreapp3.1/game.genruntimeconfig.cache
