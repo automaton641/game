@@ -1,0 +1,1 @@
+/usr/bin/clang -g   CMakeFiles/game.dir/src/game/main.c.o  -o game liblibrary.a -lpthread 

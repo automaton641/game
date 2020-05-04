@@ -1,0 +1,4 @@
+/home/automaton641/Projects/game/debug/CMakeFiles/rebuild_cache.dir
+/home/automaton641/Projects/game/debug/CMakeFiles/edit_cache.dir
+/home/automaton641/Projects/game/debug/CMakeFiles/library.dir
+/home/automaton641/Projects/game/debug/CMakeFiles/game.dir

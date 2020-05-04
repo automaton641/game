@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibrary.a  CMakeFiles/library.dir/src/library/application.c.o CMakeFiles/library.dir/src/library/player.c.o CMakeFiles/library.dir/src/library/array.c.o CMakeFiles/library.dir/src/library/game.c.o CMakeFiles/library.dir/src/library/math.c.o CMakeFiles/library.dir/src/library/memory_block.c.o
+/usr/bin/ranlib liblibrary.a

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././src/library/application.h
+library/game.h
+-
+
+.././src/library/array.h
+stddef.h
+-
+
+.././src/library/game.h
+stdbool.h
+-
+library/player.h
+-
+library/array.h
+-
+
+.././src/library/memory_block.h
+stdbool.h
+-
+
+.././src/library/player.h
+stdbool.h
+-
+library/array.h
+-
+
+/home/automaton641/Projects/game/src/game/main.c
+library/application.h
+-
+library/memory_block.h
+-
+stdio.h
+-
+stdbool.h
+-
+
